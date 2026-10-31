@@ -8,7 +8,7 @@ import streamlit as st
 # ============================================================
 # 1. CONFIGURAÇÃO BÁSICA
 # ============================================================
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Ronicharles Santos", layout="wide")
 
 MESES_NOMES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
 DIAS_UTEIS_PADRAO = [21, 20, 22, 20, 20, 22, 23, 21, 21, 22, 19, 22]
