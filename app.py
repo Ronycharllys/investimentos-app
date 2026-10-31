@@ -421,5 +421,18 @@ st.dataframe(
     },
     use_container_width=True,
 )
-
+# Injetar CSS para esconder o botão "Manage app" e o menu do Streamlit
+st.markdown(
+    """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    div[data-testid="stStatusWidget"] {visibility: hidden;}
+    .stAppDeployButton {display:none;}
+    viewer-badge {display: none !important;}
+    iframe[title="Manage app"] {display: none !important;}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
