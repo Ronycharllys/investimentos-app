@@ -16,8 +16,8 @@ st.set_page_config(
 )
 
 MESES_NOMES = [
-    "Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
-    "Jul", "Ago", "Set", "Out", "Nov", "Dez"
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novovembro", "Dezezembro"
 ]
 
 DIAS_UTEIS_PADRAO = [21, 20, 22, 20, 20, 22, 23, 21, 21, 22, 19, 22]
