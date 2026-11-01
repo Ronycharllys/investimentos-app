@@ -17,7 +17,7 @@ st.set_page_config(
 
 MESES_NOMES = [
     "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
-    "Julho", "Agosto", "Setembro", "Outubro", "Novovembro", "Dezezembro"
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
 ]
 
 DIAS_UTEIS_PADRAO = [21, 20, 22, 20, 20, 22, 23, 21, 21, 22, 19, 22]
@@ -34,16 +34,16 @@ def criar_dados_padrao():
     valores_selic = {"2026": {m: 13.75 for m in MESES_NOMES}}
 
     for mes, valor in [
-        ("Jan", 15.0),
-        ("Fev", 15.0),
-        ("Mar", 14.75),
-        ("Abr", 14.5),
-        ("Mai", 14.5),
-        ("Jun", 14.25),
-        ("Jul", 14.25),
-        ("Ago", 14.0)
-    ]:
-        valores_selic["2026"][mes] = valor
+    ("Janeiro", 15.0),
+    ("Fevereiro", 15.0),
+    ("Março", 14.75),
+    ("Abril", 14.5),
+    ("Maio", 14.5),
+    ("Junho", 14.25),
+    ("Julho", 14.25),
+    ("Agosto", 14.0)
+]:
+    valores_selic["2026"][mes] = valor
 
     valores_aportes = {
         "2026": {m: [0.0] * 100 for m in MESES_NOMES}
